@@ -10,7 +10,7 @@ public class FutureValueCalculator
 
     public static void calculate(){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("\n        ** Future Value Calculator ** \n" );
+        System.out.println("\n\n                    ** Future Value Calculator ** \n" );
 
         System.out.println("\nHow much do you want to invest?");
         double investment = scanner.nextDouble();
@@ -28,10 +28,14 @@ public class FutureValueCalculator
         // A = 10,000 (1+0.025 / 365) ^ (365*5) | A = P(1+r/n)^(nt) n = 365
         double tn = COMPOUNDED_DAILY * years;
         double future_value = investment * Math.pow(1 + (interest_rate / COMPOUNDED_DAILY), tn);
-        System.out.println("Earnings: " + NumberFormat.getCurrencyInstance().format(future_value));
+        System.out.println("\n\nInvestment " + NumberFormat.getCurrencyInstance().format(investment ) +
+                "\nTerm: " + NumberFormat.getIntegerInstance().format(years) + " years" +
+                "\nRate: " + NumberFormat.getPercentInstance().format(interest_rate) +
+                "\nApproximate Earnings: " + NumberFormat.getCurrencyInstance().format(future_value) +
+                "\n\n       ** Note the investment is being compounded daily ** ");
         //System.out.println(0.1 + 0.2);
 
-        System.out.println("\nQuit and go to main page: (y/n)");
+        System.out.println("\n                  Quit and go to main page: (y/n)");
         String calculate = scanner.nextLine();
         if (calculate.equals("y")){
             Main.board(scanner);
@@ -40,7 +44,7 @@ public class FutureValueCalculator
     }
 
 
-    public static void main(String[] args) {
+    public static void main() {
 
         do {
             calculate();

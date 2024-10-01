@@ -25,28 +25,30 @@ public class Main {
             // System.out.println("Valid Choice!");
             switch (choice){
                 case "1": //
-                    System.out.println("Running MorgageCalculator.java shortly");
+                    System.out.println("\nRunning MorgageCalculator.java shortly");
                     MortgageCalculator.main();
                     wrong = false;
                     break;
                 case "2":
-                    System.out.println("Running FutureValueCalculator.java shortly");
+                    System.out.println("\n\nRunning FutureValueCalculator.java shortly");
+                    FutureValueCalculator.calculate();
                     wrong = false;
                     break;
                 case "3":
-                    System.out.println("Running PresentValueCalculator.java shortly");
+                    System.out.println("\n\nRunning PresentValueCalculator.java shortly");
                     wrong = false;
                     break;
                 case "4":
+                    System.out.println("\n\n        ** Thank you for choosing us **");
                     wrong = false;
                     break;
                 default:
-                    System.out.println("Invalid Choice, please choose again...");
+                    System.out.println("\n\nInvalid Choice, please choose again...");
 
             }
         }else
         { // JOptionPane.showMessageDialog(null, "Invalid Choice");
-            System.out.println("Invalid Choice!");
+            System.out.println("\n\nInvalid Choice!");
 
 
         }
