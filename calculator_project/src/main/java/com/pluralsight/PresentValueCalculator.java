@@ -1,4 +1,4 @@
-package org.example;
+package com.pluralsight;
 
 public class PresentValueCalculator {
 }
