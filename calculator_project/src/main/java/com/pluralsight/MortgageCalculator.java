@@ -9,7 +9,7 @@ public class MortgageCalculator
     private static final int MONTHS_IN_YEARS = 12;
 
     public static void calculate(){
-        System.out.println("\n                Morgage Caculator\n");
+        System.out.println("\n                ** Morgage  Calculator **\n");
 
         final int MONTHS_IN_A_YEAR = 12;
 

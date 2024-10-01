@@ -31,11 +31,12 @@ public class Main {
                     break;
                 case "2":
                     System.out.println("\n\nRunning FutureValueCalculator.java shortly");
-                    FutureValueCalculator.calculate();
+                    FutureValueCalculator.main();
                     wrong = false;
                     break;
                 case "3":
                     System.out.println("\n\nRunning PresentValueCalculator.java shortly");
+                    PresentValueCalculator.main();
                     wrong = false;
                     break;
                 case "4":

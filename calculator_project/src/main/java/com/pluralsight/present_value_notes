@@ -1,0 +1,11 @@
+************************************************************************************************************************
+                                Present value notes
+************************************************************************************************************************
+
+Suppose you want to find the present value of an ordinary annuity that pays $1,000 annually for 5 years, with an annual interest rate of 5%.
+
+P=$1,000
+r=5%=0.05
+n=5 years
+
+PV = P * (1 - (1 + r) ** -n) / r
