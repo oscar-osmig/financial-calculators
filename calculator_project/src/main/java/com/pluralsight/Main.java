@@ -37,6 +37,9 @@ public class Main {
                     System.out.println("Running PresentValueCalculator.java shortly");
                     wrong = false;
                     break;
+                case "4":
+                    wrong = false;
+                    break;
                 default:
                     System.out.println("Invalid Choice, please choose again...");
 
@@ -50,11 +53,7 @@ public class Main {
 
     }
 
-
-
-    public static void main(String[] args)
-    {
-        Scanner scanner = new Scanner(System.in);
+    public static void board(Scanner scanner){
 
         do {
             System.out.println("\n        ** Welcome to Calc Enterpice ** \n" +
@@ -62,12 +61,20 @@ public class Main {
                     "\n        1. Morgage Calculator" +
                     "\n        2. Future Value Calculation" +
                     "\n        3. Present Value Calculator " +
-                    "\n\n        Your choice: ");
+                    "\n        4. QUIT" +
+                    "\n\n        ** Please choose one of the options above ** ");
 
             String choice = scanner.nextLine();
             validate_choice(choice);
 
             choice(choice);
         } while (wrong);
+    }
+
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+
+        board(scanner);
     }
 }

@@ -47,9 +47,10 @@ public class MortgageCalculator
 
         System.out.println("Total payback amount: " + NumberFormat.getCurrencyInstance().format(monthlyPayment * numberOfPayments));
 
-        System.out.println("Continue: (y/n)");
+        System.out.println("Quit and go to main page: (y/n)");
         String calculate = scanner.nextLine();
-        if (calculate.equals("n")){
+        if (calculate.equals("y")){
+            Main.board(scanner);
             again = false;
         }
     }
@@ -64,7 +65,8 @@ public class MortgageCalculator
 
         do {
             calculate();
-        }while (again);
+
+        } while (again);
 
     }
 }
