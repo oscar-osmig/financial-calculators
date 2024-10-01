@@ -5,9 +5,10 @@ import java.util.Scanner;
 
 public class FutureValueCalculator
 {
+    public static boolean again = true;
     static final double COMPOUNDED_DAILY = 365;
-    public static void main(String[] args)
-    {
+
+    public static void calculate(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("\n        ** Future Value Calculator ** \n" );
 
@@ -28,5 +29,23 @@ public class FutureValueCalculator
         double tn = COMPOUNDED_DAILY * years;
         double future_value = investment * Math.pow(1 + (interest_rate / COMPOUNDED_DAILY), tn);
         System.out.println("Earnings: " + NumberFormat.getCurrencyInstance().format(future_value));
+        //System.out.println(0.1 + 0.2);
+
+        System.out.println("\nQuit and go to main page: (y/n)");
+        String calculate = scanner.nextLine();
+        if (calculate.equals("y")){
+            Main.board(scanner);
+            again = false;
+        }
+    }
+
+
+    public static void main(String[] args) {
+
+        do {
+            calculate();
+
+        } while (again);
+
     }
 }
