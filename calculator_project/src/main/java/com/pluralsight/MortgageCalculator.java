@@ -1,5 +1,4 @@
 package com.pluralsight;
-
 import java.text.NumberFormat;
 import java.util.Scanner;
 
@@ -24,8 +23,6 @@ public class MortgageCalculator
         System.out.println("Enter the term in years:");
         int termInYears = scanner.nextInt();
         scanner.nextLine();
-
-
         // annual percentage
         annualInterestRate /= 100;
         // calculating monthly rate
@@ -62,11 +59,8 @@ public class MortgageCalculator
         // 2. Property Taxes: Annual taxes divided by 12 for monthly payments.
         // 3. Homeowner’s Insurance: Annual insurance premium divided by 12 for monthly payments.
         // 4. Private Mortgage Insurance (PMI): Required when the down payment is less than 20% of the home’s price.
-
         do {
             calculate();
-
         } while (again);
-
     }
 }

@@ -1,5 +1,4 @@
 package com.pluralsight;
-
 import java.text.NumberFormat;
 import java.util.Scanner;
 
@@ -43,13 +42,10 @@ public class FutureValueCalculator
         }
     }
 
-
-    public static void main() {
-
+    public static void main()
+    {
         do {
             calculate();
-
         } while (again);
-
     }
 }

@@ -1,5 +1,4 @@
 package com.pluralsight;
-
 import java.text.NumberFormat;
 import java.util.Scanner;
 
@@ -36,15 +35,12 @@ public class PresentValueCalculator {
             Main.board(scanner);
             again = false;
         }
-
     }
-
 
     public static void main()
     {
         do {
             calculate();
         }while (again);
-
     }
 }
